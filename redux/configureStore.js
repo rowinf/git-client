@@ -2,10 +2,11 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { createLogger } from "redux-logger";
 
 import * as actions from "./actions";
+import repos from "../data/repos";
 
 const initialState = {
   initialized: false,
-  repositories: []
+  repositories: repos
 };
 
 const reducer = (state = initialState, action) => {
