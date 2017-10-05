@@ -13,6 +13,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.INITIALIZE:
       return Object.assign({}, state, { initialized: true });
+    case actions.FETCH_USER_REPOS_SUCCESS:
+      return Object.assign({}, state, { repositories: action.payload });
     default:
       return state;
   }

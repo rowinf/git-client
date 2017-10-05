@@ -22,7 +22,8 @@ class Home extends React.PureComponent {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>rowinf's Github repos</Text>
+          <Text style={styles.headerText}>Github repos</Text>
+          <Text style={[styles.headerText, styles.alignRight]}>rowinf</Text>
         </View>
         {initialized && (
           <FlatList
@@ -44,17 +45,22 @@ class Home extends React.PureComponent {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#f5f5f5",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     width: "100%"
   },
   header: {
     height: 40 * PixelRatio.get(),
     padding: 10 * PixelRatio.get(),
     justifyContent: "flex-end",
-    alignItems: "flex-end"
+    alignItems: "flex-end",
+    flexDirection: "row"
   },
   headerText: {
-    fontSize: 16
+    fontSize: 16,
+    flex: 1
+  },
+  alignRight: {
+    textAlign: "right"
   },
   listItem: {
     backgroundColor: "#f5f5f5",
