@@ -15,9 +15,9 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.INITIALIZE:
-      return { initialized: true, ...state };
+      return { ...state, initialized: true };
     case actions.FETCH_USER_REPOS_SUCCESS:
-      return { repositories: action.payload, ...state };
+      return { ...state, repositories: action.payload };
     default:
       return state;
   }

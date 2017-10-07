@@ -1,8 +1,4 @@
 {
-  "ecmaFeatures": {
-    "experimentalObjectRestSpread": true,
-    "jsx": true
-  },
   "env": {
     "browser": true,
     "commonjs": true,
@@ -11,6 +7,7 @@
   },
   "parserOptions": {
     "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
       "jsx": true
     },
     "sourceType": "module"
