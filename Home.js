@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   header: {
-    height: 40 * PixelRatio.get(),
+    height: 80 * PixelRatio.get(),
     padding: 10 * PixelRatio.get(),
     justifyContent: "flex-end",
     alignItems: "flex-end",
